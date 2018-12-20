@@ -39,7 +39,7 @@ public class Klijent implements Runnable{
 		try{
 			while((linijaOdServera=ulazniTokOdServera.readLine())!=null){
 				System.out.println(linijaOdServera);
-				if (linijaOdServera.indexOf("*** Dovidjenja")==0){
+				if (linijaOdServera.indexOf("***Zatvara se")==0){
 					kraj=true;
 					return;
 				}
